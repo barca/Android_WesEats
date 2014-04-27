@@ -1,4 +1,5 @@
 Android_WesEats
 ===============
 
-android version of WesEats
+Android Version of WesEats
+
