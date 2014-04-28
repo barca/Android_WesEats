@@ -112,15 +112,10 @@ public class UsdanRssReadr {
 		String dailyMenu = "";
 
 		String Temp = "";
-		System.out.println("today's date is " + today);
-		System.out.println("today's menu:");
-		
 		while (weekMenu.length() > today.length()){
 			if(weekMenu.substring(0,today.length()).equals(today)){
 				Temp = weekMenu;
 				if(day.equals("Sun")){
-					System.out.println("correct");
-
 					return weekMenu;
 				}
 				else{
@@ -134,7 +129,6 @@ public class UsdanRssReadr {
 						weekMenu = weekMenu.substring(1);
 						
 						if(weekMenu.substring(0,tomorrow.length()).equals(tomorrow)){
-							System.out.println("done");
 							return dailyMenu;
 						}
 						
